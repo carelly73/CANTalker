@@ -1,0 +1,429 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\can2rs232.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\can2rs232.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "can2rs232 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "can2rs232 버전 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CAN2RS232_DIALOG DIALOGEX 0, 0, 276, 278
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "can2rs232"
+FONT 8, "Lucida Sans Unicode", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_MENU_TAB,"SysTabControl32",0x0,7,70,262,201
+    LTEXT           "Informations",IDC_STATIC,7,4,52,8
+    CONTROL         "List1",IDC_LIST_INFORM,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOCOLUMNHEADER | WS_BORDER | 
+                    WS_TABSTOP,7,13,262,51
+    PUSHBUTTON      "Clear",IDC_BTN_CLEAR_INFO,232,66,37,13,0,
+                    WS_EX_STATICEDGE
+END
+
+IDD_DLG_INFO_RCV_DATA DIALOGEX 0, 0, 257, 180
+STYLE WS_CHILD
+FONT 8, "Lucida Sans Unicode"
+BEGIN
+    PUSHBUTTON      "Status",IDC_BTN_REQ_STATUS,215,15,37,13,0,
+                    WS_EX_STATICEDGE
+    CONTROL         "List1",IDC_LIST_CTRL,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,15,206,108
+    LTEXT           "Received Data",IDC_STATIC,7,7,52,8
+    PUSHBUTTON      "Clear",IDC_BTN_CLEAR_DATA,7,125,37,13,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "AutoSnd Test",IDC_BTN_REQ_AUTO_SEND,215,69,37,23,
+                    BS_MULTILINE,WS_EX_STATICEDGE
+    GROUPBOX        "Send Packet (HEX)",IDC_STATIC,7,142,245,36
+    EDITTEXT        IDC_EDIT_SNDPK_ID,13,163,37,10,ES_CENTER | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Dest. ID",IDC_STATIC,13,152,34,11
+    EDITTEXT        IDC_EDIT_SNDPK_LEN,54,163,14,10,ES_CENTER | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Len.",IDC_STATIC,54,152,19,11
+    EDITTEXT        IDC_EDIT_SNDPK_D0,71,163,16,10,ES_CENTER | 
+                    ES_AUTOHSCROLL
+    LTEXT           "D0",IDC_STATIC,74,152,13,11
+    EDITTEXT        IDC_EDIT_SNDPK_D1,89,163,16,10,ES_CENTER | 
+                    ES_AUTOHSCROLL
+    LTEXT           "D1",IDC_STATIC,92,152,13,11
+    EDITTEXT        IDC_EDIT_SNDPK_D2,107,163,16,10,ES_CENTER | 
+                    ES_AUTOHSCROLL
+    LTEXT           "D2",IDC_STATIC,110,152,13,11
+    EDITTEXT        IDC_EDIT_SNDPK_D3,125,163,16,10,ES_CENTER | 
+                    ES_AUTOHSCROLL
+    LTEXT           "D3",IDC_STATIC,128,152,13,11
+    EDITTEXT        IDC_EDIT_SNDPK_D4,143,163,16,10,ES_CENTER | 
+                    ES_AUTOHSCROLL
+    LTEXT           "D4",IDC_STATIC,146,152,13,11
+    EDITTEXT        IDC_EDIT_SNDPK_D5,161,163,16,10,ES_CENTER | 
+                    ES_AUTOHSCROLL
+    LTEXT           "D5",IDC_STATIC,164,152,13,11
+    EDITTEXT        IDC_EDIT_SNDPK_D6,179,163,16,10,ES_CENTER | 
+                    ES_AUTOHSCROLL
+    LTEXT           "D6",IDC_STATIC,182,152,13,11
+    EDITTEXT        IDC_EDIT_SNDPK_D7,197,163,16,10,ES_CENTER | 
+                    ES_AUTOHSCROLL
+    LTEXT           "D7",IDC_STATIC,200,152,13,11
+    PUSHBUTTON      "Send",IDC_BTN_SND_PACKET,218,153,27,15,0,
+                    WS_EX_STATICEDGE
+    CONTROL         "H/W Time Stamp On",IDC_CHK_TIME_STAMP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,142,128,76,10
+    PUSHBUTTON      "Get Error  Count",IDC_BTN_REQ_ERROR_COUNT,215,29,37,19,
+                    BS_MULTILINE,WS_EX_STATICEDGE
+    PUSHBUTTON      "Get Count",IDC_BTN_GET_COUNT,215,92,37,18,BS_MULTILINE,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Get CAN Filters",IDC_BTN_REQ_REQ_CAN_FILTERS,215,49,37,
+                    19,BS_MULTILINE,WS_EX_STATICEDGE
+END
+
+IDD_DLG_SETTING DIALOGEX 0, 0, 256, 185
+STYLE WS_CHILD
+FONT 8, "Lucida Sans Unicode", 0, 0, 0x1
+BEGIN
+    LTEXT           "CAN_ID (HEX)",IDC_STATIC,29,8,47,10
+    EDITTEXT        IDC_EDIT_CAN_ID,79,7,42,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set",IDC_BTN_SETTING,190,164,37,14,WS_DISABLED,
+                    WS_EX_STATICEDGE
+    LTEXT           "BRGCON1",IDC_STATIC,37,35,34,10
+    EDITTEXT        IDC_EDIT_BRGCON1,74,33,42,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BRGCON2,74,45,42,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BRGCON3,74,57,42,12,ES_AUTOHSCROLL
+    LTEXT           "BRGCON2",IDC_STATIC,37,47,34,10
+    LTEXT           "BRGCON3",IDC_STATIC,37,59,34,10
+    GROUPBOX        "Bit Timing Config. (HEX)",IDC_STATIC,28,21,96,53
+    GROUPBOX        "Port && Baudrate",IDC_STATIC,131,21,96,54
+    LTEXT           "RS232",IDC_STATIC,138,48,26,10
+    LTEXT           "CAN",IDC_STATIC,138,60,21,10
+    COMBOBOX        IDC_CBO_RS232,167,46,52,73,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CBO_CAN,167,59,52,73,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Acceptance Filters (HEX)",IDC_STATIC,28,77,198,78
+    EDITTEXT        IDC_EDIT_RX0MASK,78,87,42,12,ES_AUTOHSCROLL
+    LTEXT           "RX0MASK",IDC_STATIC,34,89,34,10
+    EDITTEXT        IDC_EDIT_RX0FILTER0,78,101,42,12,ES_AUTOHSCROLL
+    LTEXT           "RX0FILTER0",IDC_STATIC,34,103,43,10
+    EDITTEXT        IDC_EDIT_RX0FILTER1,78,115,42,12,ES_AUTOHSCROLL
+    LTEXT           "RX0FILTER1",IDC_STATIC,34,117,43,10
+    EDITTEXT        IDC_EDIT_RX1MASK,171,87,42,12,ES_AUTOHSCROLL
+    LTEXT           "RX1MASK",IDC_STATIC,127,89,34,10
+    EDITTEXT        IDC_EDIT_RX1FILTER2,171,100,42,12,ES_AUTOHSCROLL
+    LTEXT           "RX1FILTER2",IDC_STATIC,127,102,43,10
+    EDITTEXT        IDC_EDIT_RX1FILTER3,171,113,42,12,ES_AUTOHSCROLL
+    LTEXT           "RX1FILTER3",IDC_STATIC,127,115,43,10
+    EDITTEXT        IDC_EDIT_RX1FILTER4,171,127,42,12,ES_AUTOHSCROLL
+    LTEXT           "RX1FILTER4",IDC_STATIC,127,129,43,10
+    EDITTEXT        IDC_EDIT_RX1FILTER5,171,140,42,12,ES_AUTOHSCROLL
+    LTEXT           "RX1FILTER5",IDC_STATIC,127,142,43,10
+    LTEXT           "PORT",IDC_STATIC,138,34,22,10
+    COMBOBOX        IDC_CBO_PORT,167,33,52,73,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Use User Filters",IDC_CHK_USER_FILTER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,40,136,67,10
+    CONTROL         "Extended ID Mode",IDC_CHK_EXT_ID_MODE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,131,9,74,10
+    PUSHBUTTON      "RS232 Connect",IDC_BTN_CONNECT,69,164,62,14,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "USB Connect",IDC_BTN_USB_CONNECT,137,164,47,14,0,
+                    WS_EX_STATICEDGE
+END
+
+IDD_DLG_SETUP_RS232 DIALOGEX 0, 0, 275, 226
+STYLE WS_CHILD
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    LTEXT           "Baudrate",IDC_STATIC,28,26,32,10
+    COMBOBOX        IDC_CBO_RS232,62,24,52,73,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "PORT",IDC_STATIC,28,10,22,10
+    COMBOBOX        IDC_CBO_PORT,62,7,52,73,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Auto Detect RS232",IDC_BTN_AUTODETECT,29,83,73,21,0,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "Set",IDC_BTN_AUTODETECT2,124,14,47,21,0,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+END
+
+IDD_DLG_OBD_SETUP DIALOGEX 0, 0, 259, 195
+STYLE WS_CHILD
+FONT 8, "Lucida Sans Unicode", 0, 0, 0x1
+BEGIN
+    CONTROL         "Engine Temperature (PID-05)",IDC_CHK_ENGINE_TEMP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,26,108,10
+    CONTROL         "Engine Load (PID-04)",IDC_CHK_ENGINE_LOAD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,13,75,10
+    CONTROL         "Fuel Pressure (PID-0A)",IDC_CHK_FUEL_PRESSURE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,39,90,10
+    CONTROL         "Intake Manifold Pressure  (PID-0B)",
+                    IDC_CHK_INTAKE_MAN_PRESSURE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,52,115,10
+    CONTROL         "Engine RPM (PID-0C)",IDC_CHK_ENGINE_RPM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,65,95,10
+    CONTROL         "Vehicle Speed (PID-0D)",IDC_CHK_VEHICLE_SPEED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,135,15,95,10
+    CONTROL         "Timing Advance (PID-0E)",IDC_CHK_TIMING_ADVANCE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,135,28,95,10
+    CONTROL         "Intake Air Temperature (PID-0F)",
+                    IDC_CHK_INTAKE_AIR_TEMP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,135,41,109,10
+    CONTROL         "MAF air flow rate (PID-10)",IDC_CHK_MAF_AIR_FLOW_RATE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,135,54,95,10
+    CONTROL         "Throttle Position (PID-11)",IDC_CHK_THROTTLE_POS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,135,67,95,10
+    GROUPBOX        "Monitor Items",IDC_STATIC,7,3,245,78
+    CONTROL         "List1",IDC_LIST_MONITOR,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,85,197,107
+    PUSHBUTTON      "Start",IDC_BTN_START,209,85,43,16,0,WS_EX_STATICEDGE
+    LTEXT           "Polling(sec)",IDC_STATIC,211,126,38,10
+    EDITTEXT        IDC_EDT_POLL_INTV,211,137,41,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "OBD Mode",IDC_BTN_OBD_MODE,209,102,43,16,0,
+                    WS_EX_STATICEDGE
+END
+
+IDD_DLG_OBD_MONITOR DIALOG DISCARDABLE  0, 0, 240, 180
+STYLE WS_CHILD
+FONT 8, "Lucida Sans Unicode"
+BEGIN
+END
+
+IDD_DLG_CAN_OPEN DIALOGEX 0, 0, 258, 182
+STYLE WS_CHILD
+FONT 8, "Lucida Sans Unicode"
+BEGIN
+    LISTBOX         IDC_LIST_INFO,2,2,254,162,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Save",IDC_BTN_SAVE,201,168,52,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Clear",IDC_BTN_CLEAR,147,168,52,14,0,WS_EX_STATICEDGE
+    CONTROL         "AutoScroll",IDC_CHK_AUTOSCROLL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,170,64,8
+    CONTROL         "Align",IDC_CHK_ALIGN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,74,170,45,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "can2rs232 MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "can2rs232\0"
+            VALUE "LegalCopyright", "Copyright (C) 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "can2rs232.EXE\0"
+            VALUE "ProductName", "can2rs232 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CAN2RS232_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 271
+    END
+
+    IDD_DLG_INFO_RCV_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_DLG_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_DLG_SETUP_RS232, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_DLG_OBD_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_DLG_OBD_MONITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "can2rs232 정보(&A)..."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\can2rs232.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

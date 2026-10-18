@@ -1,0 +1,408 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\can2ethernet.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\can2ethernet.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "can2ethernet 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "can2ethernet 버전 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CAN2ETHERNET_DIALOG DIALOGEX 0, 0, 299, 319
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CAN to Ethernet Gateway - V2.0"
+FONT 9, "Arial"
+BEGIN
+    LTEXT           "Information",IDC_STATIC,7,7,62,8
+    CONTROL         "Tab1",IDC_MENU_TAB,"SysTabControl32",0x0,7,57,285,255
+    CONTROL         "List2",IDC_LIST_INFORM,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOCOLUMNHEADER | WS_BORDER | 
+                    WS_TABSTOP,7,18,285,37
+    PUSHBUTTON      "Clear",IDC_BTN_CLEAR_INFO,253,5,39,13,0,
+                    WS_EX_STATICEDGE
+END
+
+IDD_DLG_INFO_RCV_DATA DIALOGEX 0, 0, 288, 237
+STYLE WS_CHILD
+FONT 9, "Arial"
+BEGIN
+    LTEXT           "Received Data",IDC_STATIC,7,7,68,10
+    CONTROL         "List1",IDC_LIST_CTRL,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,17,222,153
+    PUSHBUTTON      "Status",IDC_BTN_REQ_STATUS,233,18,48,17,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "AutoSnd",IDC_BTN_REQ_AUTO_SEND,233,57,48,18,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Clear",IDC_BTN_CLEAR_DATA,7,173,39,14,0,
+                    WS_EX_STATICEDGE
+    CONTROL         "Receive",IDC_CHK_RECEIVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,53,173,48,14
+    PUSHBUTTON      "Version",IDC_BTN_REQ_VERSION,233,38,48,17,0,
+                    WS_EX_STATICEDGE
+    GROUPBOX        "Send Packet (HEX)",IDC_STATIC,7,190,274,40
+    LTEXT           "Dest. ID",IDC_STATIC,18,201,26,8
+    LTEXT           "Len.",IDC_STATIC,51,201,14,8
+    LTEXT           "D0",IDC_STATIC,73,201,11,8
+    LTEXT           "D1",IDC_STATIC,93,201,11,8
+    LTEXT           "D2",IDC_STATIC,113,201,11,8
+    LTEXT           "D3",IDC_STATIC,133,201,11,8
+    LTEXT           "D4",IDC_STATIC,153,201,11,8
+    LTEXT           "D5",IDC_STATIC,173,201,11,8
+    LTEXT           "D6",IDC_STATIC,193,201,11,8
+    LTEXT           "D7",IDC_STATIC,213,201,11,8
+    EDITTEXT        IDC_EDIT_SND_PK_ID,13,210,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SND_PK_LEN,49,210,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SND_PK0,69,210,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SND_PK1,89,210,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SND_PK2,109,210,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SND_PK3,129,210,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SND_PK4,149,210,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SND_PK5,169,210,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SND_PK6,189,210,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SND_PK7,209,210,18,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_BTN_SND_PACKET,235,204,30,17,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Err Clear",IDC_BTN_ERR_CLEAR,233,77,48,17,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "GetCount",IDC_BTN_GET_CNT,233,95,48,17,0,
+                    WS_EX_STATICEDGE
+END
+
+IDD_DLG_SETTING DIALOGEX 0, 0, 279, 236
+STYLE WS_CHILD
+FONT 9, "Arial", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "TCP/IP setup",IDC_STATIC,7,7,265,41
+    GROUPBOX        "CAN setup",IDC_STATIC,7,51,265,178
+    PUSHBUTTON      "Connect",IDC_BTN_CONNECT,209,21,49,17,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Set",IDC_BTN_SETTING,219,63,39,17,WS_DISABLED,
+                    WS_EX_STATICEDGE
+    LTEXT           "IP address",IDC_STATIC,51,19,40,8
+    LTEXT           "Port No",IDC_STATIC,51,32,40,8
+    EDITTEXT        IDC_EDIT_IP_ADDR,91,18,70,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PORT_NO,91,31,32,12,ES_AUTOHSCROLL
+    LTEXT           "CAN ID (HEX)",IDC_STATIC,19,70,45,8
+    EDITTEXT        IDC_EDIT_CAN_ID,67,69,48,12,ES_AUTOHSCROLL
+    CONTROL         "Extended ID mode",IDC_CHK_EXT_ID_MODE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,127,71,77,8
+    GROUPBOX        "Bit Timing (HEX) or Bitrate",IDC_STATIC,17,84,243,52
+    GROUPBOX        "Acceptance Filter && Mask (HEX)",IDC_STATIC,17,142,243,
+                    80
+    LTEXT           "BRGCON1",IDC_STATIC,135,97,38,8
+    LTEXT           "BRGCON2",IDC_STATIC,135,109,36,8
+    LTEXT           "BRGCON3",IDC_STATIC,135,120,37,8
+    EDITTEXT        IDC_EDIT_BRGCON1,183,95,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BRGCON2,183,107,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BRGCON3,183,119,48,12,ES_AUTOHSCROLL
+    LTEXT           "RX0MASK",IDC_STATIC,29,158,38,8
+    LTEXT           "RX0FILTER0",IDC_STATIC,29,171,43,8
+    LTEXT           "RX0FILTER1",IDC_STATIC,29,184,43,8
+    LTEXT           "RX1MASK",IDC_STATIC,145,153,38,8
+    LTEXT           "RX1FILTER2",IDC_STATIC,145,167,43,8
+    LTEXT           "RX1FILTER3",IDC_STATIC,145,180,43,8
+    LTEXT           "RX1FILTER4",IDC_STATIC,145,192,43,8
+    LTEXT           "RX1FILTER5",IDC_STATIC,145,205,43,8
+    EDITTEXT        IDC_EDIT_RX0MASK,75,156,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RX0FILTER0,75,169,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RX0FILTER1,75,182,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RX1MASK,189,151,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RX1FILTER2,189,164,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RX1FILTER3,189,177,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RX1FILTER4,189,190,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RX1FILTER5,189,203,48,12,ES_AUTOHSCROLL
+    CONTROL         "Use User Filters",IDC_CHK_USER_FILTER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,29,201,80,8
+    LTEXT           "CAN bitrate",IDC_STATIC,35,99,38,8
+    COMBOBOX        IDC_CBO_CAN,35,108,57,65,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_CAN_OPEN DIALOGEX 0, 0, 280, 235
+STYLE WS_CHILD
+FONT 9, "Courier New", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_INFO,7,2,268,206,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Save",IDC_BTN_SAVE,228,214,52,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Clear",IDC_BTN_CLEAR,169,214,52,14,0,WS_EX_STATICEDGE
+    CONTROL         "AutoScroll",IDC_CHK_AUTOSCROLL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,216,64,8
+    CONTROL         "Align",IDC_CHK_ALIGN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,74,216,45,8
+END
+
+IDD_DLG_SEND_PACKET DIALOGEX 0, 0, 278, 215
+STYLE WS_CHILD
+FONT 9, "Arial", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_MSG1,49,25,195,13,ES_AUTOHSCROLL
+    LTEXT           "Message 1",IDC_STATIC,7,27,36,13
+    LTEXT           "Format(Hex) : CAN-ID, Length, D0, D1, D2, D3, D4, D5, D6, D7 ",
+                    IDC_STATIC,49,12,195,9
+    CONTROL         "Check1",IDC_CHK_MSG1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,249,25,8,12
+    EDITTEXT        IDC_EDIT_MSG2,49,40,195,13,ES_AUTOHSCROLL
+    LTEXT           "Message 2",IDC_STATIC,7,42,36,13
+    CONTROL         "Check2",IDC_CHK_MSG2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,249,40,8,12
+    EDITTEXT        IDC_EDIT_MSG3,49,55,195,13,ES_AUTOHSCROLL
+    LTEXT           "Message 3",IDC_STATIC,7,57,36,13
+    CONTROL         "Check3",IDC_CHK_MSG3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,249,55,8,12
+    EDITTEXT        IDC_EDIT_MSG4,49,70,195,13,ES_AUTOHSCROLL
+    LTEXT           "Message 4",IDC_STATIC,7,72,36,13
+    CONTROL         "Check1",IDC_CHK_MSG4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,249,70,8,12
+    EDITTEXT        IDC_EDIT_MSG5,49,85,195,13,ES_AUTOHSCROLL
+    LTEXT           "Message 5",IDC_STATIC,7,87,36,13
+    CONTROL         "Check1",IDC_CHK_MSG5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,249,85,8,12
+    EDITTEXT        IDC_EDIT_MSG6,49,100,195,13,ES_AUTOHSCROLL
+    LTEXT           "Message 6",IDC_STATIC,7,102,36,13
+    CONTROL         "Check1",IDC_CHK_MSG6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,249,100,8,12
+    EDITTEXT        IDC_EDIT_MSG7,49,115,195,13,ES_AUTOHSCROLL
+    LTEXT           "Message 7",IDC_STATIC,7,117,36,13
+    CONTROL         "Check1",IDC_CHK_MSG7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,249,115,8,12
+    EDITTEXT        IDC_EDIT_MSG8,49,131,195,13,ES_AUTOHSCROLL
+    LTEXT           "Message 8",IDC_STATIC,7,133,36,13
+    CONTROL         "Check1",IDC_CHK_MSG8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,249,131,8,12
+    EDITTEXT        IDC_EDIT_MSG9,49,146,195,13,ES_AUTOHSCROLL
+    LTEXT           "Message 9",IDC_STATIC,7,149,36,13
+    CONTROL         "Check1",IDC_CHK_MSG9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,249,146,8,12
+    EDITTEXT        IDC_EDIT_MSG10,49,161,195,13,ES_AUTOHSCROLL
+    LTEXT           "Message10",IDC_STATIC,7,163,38,13
+    CONTROL         "Check1",IDC_CHK_MSG10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,249,161,8,12
+    PUSHBUTTON      "Send Message",IDC_BTN_SEND_MSG,181,183,69,15,0,
+                    WS_EX_STATICEDGE
+    CONTROL         "Receive to CANopen Tab",IDC_CHK_RCV_CAN_OPEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,21,188,114,7
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "can2ethernet MFC 응용 프로그램\0"
+            VALUE "FileVersion", "2, 0, 0, 0\0"
+            VALUE "InternalName", "can2ethernet\0"
+            VALUE "LegalCopyright", "Copyright (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "can2ethernet.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "can2ethernet 응용 프로그램\0"
+            VALUE "ProductVersion", "2, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CAN2ETHERNET_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 312
+    END
+
+    IDD_DLG_INFO_RCV_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 230
+    END
+
+    IDD_DLG_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+
+    IDD_DLG_CAN_OPEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 228
+    END
+
+    IDD_DLG_SEND_PACKET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "can2ethernet 정보(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 소켓 초기화에 실패하였습니다."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\can2ethernet.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

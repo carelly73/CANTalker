@@ -1,0 +1,75 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: can2ethernet - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Release/can2ethernet.res" /d "NDEBUG" /d "_AFXDLL" "c:\work\c2r_r2\app\c2e_120811\can2ethernet.rc"" 
+Creating temporary file "C:\DOCUME~1\dhkim\LOCALS~1\Temp\RSP22C.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/can2ethernet.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"c:\work\c2r_r2\app\c2e_120811\can2ethernet.cpp"
+"c:\work\c2r_r2\app\c2e_120811\can2ethernetDlg.cpp"
+"c:\work\c2r_r2\app\c2e_120811\CAN2EthernetSock.cpp"
+"c:\work\c2r_r2\app\c2e_120811\CAN2RS232Conv.cpp"
+"c:\work\c2r_r2\app\c2e_120811\CanOpenAnalyser1.cpp"
+"c:\work\c2r_r2\app\c2e_120811\Clipboard.cpp"
+"c:\work\c2r_r2\app\c2e_120811\MultiSendMsg.cpp"
+"c:\work\c2r_r2\app\c2e_120811\TabInfo.cpp"
+"c:\work\c2r_r2\app\c2e_120811\TabSetup.cpp"
+"c:\work\c2r_r2\app\c2e_120811\XListBox.cpp"
+"c:\work\c2r_r2\app\c2e_120811\XTabCtrl.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\dhkim\LOCALS~1\Temp\RSP22C.tmp" 
+Creating temporary file "C:\DOCUME~1\dhkim\LOCALS~1\Temp\RSP22D.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/can2ethernet.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"c:\work\c2r_r2\app\c2e_120811\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\dhkim\LOCALS~1\Temp\RSP22D.tmp" 
+Creating temporary file "C:\DOCUME~1\dhkim\LOCALS~1\Temp\RSP22E.tmp" with contents
+[
+winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/can2ethernet.pdb" /machine:I386 /out:"Release/can2ethernet.exe" 
+.\Release\can2ethernet.obj
+.\Release\can2ethernetDlg.obj
+.\Release\CAN2EthernetSock.obj
+.\Release\CAN2RS232Conv.obj
+.\Release\CanOpenAnalyser1.obj
+.\Release\Clipboard.obj
+.\Release\MultiSendMsg.obj
+.\Release\StdAfx.obj
+.\Release\TabInfo.obj
+.\Release\TabSetup.obj
+.\Release\XListBox.obj
+.\Release\XTabCtrl.obj
+.\Release\can2ethernet.res
+]
+Creating command line "link.exe @C:\DOCUME~1\dhkim\LOCALS~1\Temp\RSP22E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+can2ethernet.cpp
+can2ethernetDlg.cpp
+CAN2EthernetSock.cpp
+CAN2RS232Conv.cpp
+CanOpenAnalyser1.cpp
+Clipboard.cpp
+MultiSendMsg.cpp
+TabInfo.cpp
+TabSetup.cpp
+XListBox.cpp
+XTabCtrl.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+can2ethernet.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

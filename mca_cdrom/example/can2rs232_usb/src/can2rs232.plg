@@ -1,0 +1,101 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: can2rs232 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Release/can2rs232.res" /d "NDEBUG" /d "_AFXDLL" "c:\work\c2r_r2\app\c2r_v2.4_120811\can2rs232.rc"" 
+Creating temporary file "C:\DOCUME~1\dhkim\LOCALS~1\Temp\RSP16D.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/can2rs232.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"c:\work\c2r_r2\app\c2r_v2.4_120811\can2rs232.cpp"
+"c:\work\c2r_r2\app\c2r_v2.4_120811\CAN2RS232Conv.cpp"
+"c:\work\c2r_r2\app\c2r_v2.4_120811\can2rs232Dlg.cpp"
+"c:\work\c2r_r2\app\c2r_v2.4_120811\CanOpenAnalyser.cpp"
+"c:\work\c2r_r2\app\c2r_v2.4_120811\Clipboard.cpp"
+"c:\work\c2r_r2\app\c2r_v2.4_120811\Comm.cpp"
+"c:\work\c2r_r2\app\c2r_v2.4_120811\MpUsbAPI.cpp"
+"c:\work\c2r_r2\app\c2r_v2.4_120811\OBDMonitor.cpp"
+"c:\work\c2r_r2\app\c2r_v2.4_120811\TabInfo.cpp"
+"c:\work\c2r_r2\app\c2r_v2.4_120811\TabRS232Setup.cpp"
+"c:\work\c2r_r2\app\c2r_v2.4_120811\TabSetup.cpp"
+"c:\work\c2r_r2\app\c2r_v2.4_120811\XListBox.cpp"
+"c:\work\c2r_r2\app\c2r_v2.4_120811\XTabCtrl.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\dhkim\LOCALS~1\Temp\RSP16D.tmp" 
+Creating temporary file "C:\DOCUME~1\dhkim\LOCALS~1\Temp\RSP16E.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/can2rs232.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"c:\work\c2r_r2\app\c2r_v2.4_120811\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\dhkim\LOCALS~1\Temp\RSP16E.tmp" 
+Creating temporary file "C:\DOCUME~1\dhkim\LOCALS~1\Temp\RSP16F.tmp" with contents
+[
+winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/can2rs232.pdb" /machine:I386 /out:"Release/can2rs232.exe" 
+.\Release\can2rs232.obj
+.\Release\CAN2RS232Conv.obj
+.\Release\can2rs232Dlg.obj
+.\Release\CanOpenAnalyser.obj
+.\Release\Clipboard.obj
+.\Release\Comm.obj
+.\Release\MpUsbAPI.obj
+.\Release\OBDMonitor.obj
+.\Release\StdAfx.obj
+.\Release\TabInfo.obj
+.\Release\TabRS232Setup.obj
+.\Release\TabSetup.obj
+.\Release\XListBox.obj
+.\Release\XTabCtrl.obj
+.\Release\can2rs232.res
+]
+Creating command line "link.exe @C:\DOCUME~1\dhkim\LOCALS~1\Temp\RSP16F.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+can2rs232.cpp
+CAN2RS232Conv.cpp
+can2rs232Dlg.cpp
+CanOpenAnalyser.cpp
+Clipboard.cpp
+Comm.cpp
+MpUsbAPI.cpp
+OBDMonitor.cpp
+TabInfo.cpp
+TabRS232Setup.cpp
+TabSetup.cpp
+XListBox.cpp
+XTabCtrl.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\dhkim\LOCALS~1\Temp\RSP171.tmp" with contents
+[
+/nologo /o"Release/can2rs232.bsc" 
+.\Release\StdAfx.sbr
+.\Release\can2rs232.sbr
+.\Release\CAN2RS232Conv.sbr
+.\Release\can2rs232Dlg.sbr
+.\Release\CanOpenAnalyser.sbr
+.\Release\Clipboard.sbr
+.\Release\Comm.sbr
+.\Release\MpUsbAPI.sbr
+.\Release\OBDMonitor.sbr
+.\Release\TabInfo.sbr
+.\Release\TabRS232Setup.sbr
+.\Release\TabSetup.sbr
+.\Release\XListBox.sbr
+.\Release\XTabCtrl.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\dhkim\LOCALS~1\Temp\RSP171.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+can2rs232.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
