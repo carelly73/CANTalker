@@ -1,0 +1,81 @@
+// CAN2RS232.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (CAN2RS232.tlb) that will become a resource in
+// CAN2RS232.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(0C7CE946-FCCB-4370-BD70-CC0F25319297), version(1.0),
+  helpfile("CAN2RS232.hlp"),
+  helpstring("CAN2RS232 ActiveX Control module"),
+  control ]
+library CAN2RS232Lib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CCAN2RS232Ctrl
+
+	[ uuid(B32F5754-04FA-4D54-9E5D-F19A69D9A880),
+	  helpstring("Dispatch interface for CAN2RS232 Control"), hidden ]
+	dispinterface _DCAN2RS232
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CCAN2RS232Ctrl)
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CCAN2RS232Ctrl)
+			[id(1)] boolean Initialize(short port, long brate);
+			[id(2)] void Close();
+			[id(3)] boolean SetCanID(boolean extMode, long canID);
+			[id(4)] boolean SetRs232BaudRate(long brate);
+			[id(5)] void SetCanBaudRate(short brate);
+			[id(6)] void ReqCanStatus();
+			[id(7)] boolean SendMessage(long canID, short len, short data0, short data1, short data2, short data3, short data4, short data5, short data6, short data7);
+			[id(8)] void SetBitTiming(short BRGCON1, short BRGCON2, short BRGCON3);
+			[id(9)] void SetAcceptacneFilter(long mask1, long mask2, long filter1, long filter2, long filter3, long filter4, long filter5, long filter6);
+			//}}AFX_ODL_METHOD
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CCAN2RS232Ctrl
+
+	[ uuid(1D3A5B8A-6C8A-4887-B84B-FF1EBF82D29E),
+	  helpstring("Event interface for CAN2RS232 Control") ]
+	dispinterface _DCAN2RS232Events
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CCAN2RS232Ctrl)
+			[id(1)] void PacketReceived(long canID, short length, short data0, short data1, short data2, short data3, short data4, short data5, short data6, short data7);
+			[id(2)] void ProtocolAcknowlegde(boolean isError, short ErrCode);
+			[id(3)] void RspCanStauts(short status, long canID, short BRGCON1, short BRGCON2, short BRGCON3);
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CCAN2RS232Ctrl
+
+	[ uuid(21C37A12-A76D-458B-AED5-1F16835EECE0),
+	  helpstring("CAN2RS232 Control"), control ]
+	coclass CAN2RS232
+	{
+		[default] dispinterface _DCAN2RS232;
+		[default, source] dispinterface _DCAN2RS232Events;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};
